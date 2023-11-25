@@ -19,7 +19,7 @@ namespace Dispenser_Shows_Loaded_And_Total_Counts {
         [HarmonyTargetMethod]
         [UsedImplicitly]
         public static MethodBase TargetMethod() {
-            return typeof(CargoDisplayPanelUi).GetMethod("AssignItems", BindingFlags.NonPublic | BindingFlags.Instance);
+            return typeof(CargoDisplayPanelUi).GetMethod(nameof(CargoDisplayPanelUi.AssignItems), BindingFlags.NonPublic | BindingFlags.Instance);
         }
 
         [UsedImplicitly]
@@ -52,7 +52,7 @@ namespace Dispenser_Shows_Loaded_And_Total_Counts {
         [HarmonyTargetMethod]
         [UsedImplicitly]
         public static MethodBase TargetMethod() {
-            return typeof(ItemDisplayWorldUi).GetMethod("UpdateText", BindingFlags.NonPublic | BindingFlags.Instance);
+            return typeof(ItemDisplayWorldUi).GetMethod(nameof(ItemDisplayWorldUi.UpdateText), BindingFlags.NonPublic | BindingFlags.Instance);
         }
 
         [UsedImplicitly]
